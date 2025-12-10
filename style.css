@@ -1,0 +1,166 @@
+/* Global styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f3f5fb;          /* soft blue-grey background */
+    color: #222;
+}
+
+/* Links */
+a {
+    color: #0077ff;               /* CloudFound blue */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header + nav */
+header {
+    text-align: center;
+    padding: 60px 20px 40px;
+    background: #ffffff;
+    border-bottom: 2px solid #e0e6f5;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+header h1 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    max-width: 500px;
+    margin: 0 auto 20px;
+    color: #555;
+}
+
+/* Sticky nav with layout */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 10px;
+
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    border-bottom: 1px solid #e0e6f5;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+nav a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+nav a:hover {
+    color: #0077ff;
+}
+
+/* Main layout wrapper */
+main {
+    padding: 20px 0 40px;
+}
+
+/* Sections */
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px 28px 46px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+section p,
+section li {
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* Contact form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccd4ea;
+    border-radius: 4px;
+    font: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #0077ff;
+    border-color: #0077ff;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Button */
+button {
+    padding: 12px;
+    border: none;
+    background: #3399ff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+button:hover {
+    background: #005fcc;          /* darker blue on hover */
+}
+
+/* Hero Section */
+.hero-content {
+    padding: 40px 20px 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    background: #0077ff;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.cta-button:hover {
+    background: #005fcc;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 18px 12px;
+    font-size: 0.85rem;
+    color: #666;
+    background: #ffffff;
+    border-top: 1px solid #e0e6f5;
+}
