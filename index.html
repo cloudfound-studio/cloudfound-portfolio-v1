@@ -3,75 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CloudFound Portfolio</title>
+    <title>CloudFound – Websites & Care Plans</title>
+
+    <!-- Google fonts for more “designed” look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="hero-content">
-            <h1>CloudFound</h1>
-            <p>Modern websites for local service businesses.</p>
-            <a class="cta-button" href="#contact">Get a Free Website Update Plan</a>
+    <!-- HERO / HEADER -->
+    <header class="hero">
+        <div class="hero-top">
+            <div class="logo">CloudFound</div>
+            <nav class="main-nav">
+                <a href="#about">About</a>
+                <a href="#skills">How I Work</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
 
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="hero-grid">
+            <!-- Left side: photo area (set with CSS background) -->
+            <div class="hero-photo" aria-hidden="true"></div>
+
+            <!-- Right side: hero card like your inspo -->
+            <div class="hero-card">
+                <p class="eyebrow">Website care for local service businesses</p>
+                <h1>Modern websites, quietly taken care of for you.</h1>
+                <p class="hero-text">
+                    CloudFound builds and maintains simple, reliable websites for small businesses in Kitchener
+                    so you can look professional online without worrying about the tech.
+                </p>
+                <a class="btn-primary" href="#contact">Book a free website check-up</a>
+            </div>
+        </div>
     </header>
 
-    <!-- Main content of the page -->
+    <!-- MAIN CONTENT -->
     <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hi, I'm Jacob, a computer science student who builds clean, responsive websites for small businesses in Kitchener and the surrounding area.</p>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section section-cream">
+            <div class="section-inner two-col">
+                <div>
+                    <h2>For small teams who want big-business polish.</h2>
+                    <p>
+                        Hi, I’m Jacob – a computer science student who loves building clean, responsive
+                        websites that feel calm, clear, and easy to use. I focus on local service businesses:
+                        trades, salons, studios, and other small teams that don’t have an in-house “web person”.
+                    </p>
+                </div>
+                <div>
+                    <ul class="checklist">
+                        <li>Simple layouts that look good on phones and laptops</li>
+                        <li>Clear calls-to-action so people know how to contact you</li>
+                        <li>Fast loading and easy to maintain over time</li>
+                        <li>Friendly, human communication the whole way through</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML &amp; CSS – clean, simple layouts</li>
-                <li>Responsive design – sites that work on phones and laptops</li>
-                <li>Basic JavaScript – small interactive features</li>
-                <li>WordPress setup &amp; management (learning and improving every week)</li>
-            </ul>
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section section-white">
+            <div class="section-inner two-col">
+                <div>
+                    <h2>What I bring to your project</h2>
+                    <p>Right now I keep things intentionally simple and reliable:</p>
+                </div>
+                <div>
+                    <ul class="bullets">
+                        <li><strong>HTML &amp; CSS</strong> – clean, modern layouts with plenty of breathing room.</li>
+                        <li><strong>Responsive design</strong> – your site works on phones, tablets, and laptops.</li>
+                        <li><strong>Light JavaScript</strong> – small interactive touches without heavy frameworks.</li>
+                        <li><strong>WordPress setup &amp; management</strong> – basics done properly, with updates and backups.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section id="services">
-            <h2>Services I Want to Offer</h2>
-            <ul>
-                <li>Starter websites for new or small businesses</li>
-                <li>Website refresh for outdated or non-mobile sites</li>
-                <li>Ongoing maintenance: updates, backups, and small content edits</li>
-            </ul>
+        <!-- SERVICES SECTION -->
+        <section id="services" class="section section-rose">
+            <div class="section-inner services-grid">
+                <div class="section-intro">
+                    <h2>Ways we can work together</h2>
+                    <p>
+                        Start simple and grow over time. Every project includes basic mobile optimization and a quick
+                        walkthrough so you know how to use your site.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <p class="eyebrow">Starter website</p>
+                    <h3>New site build</h3>
+                    <p>
+                        A clean, 3–4 page website for a new or growing business. Think Home, About, Services, and Contact – nothing confusing.
+                    </p>
+                    <ul class="bullets">
+                        <li>Custom layout that fits your brand</li>
+                        <li>Mobile-friendly from day one</li>
+                        <li>Basic on-page SEO setup</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <p class="eyebrow">Refresh &amp; repair</p>
+                    <h3>Existing site glow-up</h3>
+                    <p>
+                        Already have a site but it feels old, slow, or messy? I can clean up the layout, update the copy, and fix obvious issues.
+                    </p>
+                    <ul class="bullets">
+                        <li>Modernized design and fonts</li>
+                        <li>Better structure for key info</li>
+                        <li>Improved mobile experience</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <p class="eyebrow">Ongoing care</p>
+                    <h3>Website maintenance</h3>
+                    <p>
+                        Monthly updates so your site stays secure and accurate while you focus on running the business.
+                    </p>
+                    <ul class="bullets">
+                        <li>Updates &amp; backups</li>
+                        <li>Minor content edits</li>
+                        <li>Basic performance &amp; security checks</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email me at <a href="mailto:cloudfound.studio@gmail.com">cloudfound.studio@gmail.com</a></p>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section section-contact">
+            <div class="section-inner contact-layout">
+                <div class="contact-copy">
+                    <h2>Tell me a bit about your business</h2>
+                    <p>
+                        No pressure, no jargon. Share a quick overview of what you do and what’s not working with your current website (or the fact that you don’t have one yet).
+                    </p>
+                    <p class="small">
+                        I’ll reply with a short Loom video or email outlining ideas, timing, and a ballpark budget.
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <form>
+                        <label>
+                            Your Name
+                            <input type="text" name="name" required>
+                        </label>
+
+                        <label>
+                            Your Email
+                            <input type="email" name="email" required>
+                        </label>
+
+                        <label>
+                            Your Business / Website
+                            <input type="text" name="business">
+                        </label>
+
+                        <label>
+                            What do you need help with?
+                            <textarea name="message" rows="4" required></textarea>
+                        </label>
+
+                        <button type="submit">Send message</button>
+                    </form>
+                    <p class="contact-email">
+                        Prefer email? Reach me at
+                        <a href="mailto:cloudfound.studio@gmail.com">cloudfound.studio@gmail.com</a>
+                    </p>
+                </div>
+            </div>
         </section>
     </main>
 
-    <!-- Footer at the very bottom -->
-    <footer>
+    <!-- FOOTER -->
+    <footer class="site-footer">
         <p>&copy; <span id="year"></span> CloudFound. Modern websites for local service businesses.</p>
     </footer>
-        <!-- Footer at the very bottom -->
-    <footer>
-        <p>&copy; <span id="year"></span> CloudFound. Modern websites for local service businesses.</p>
-    </footer>
+
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
     </script>
-
 </body>
 </html>
