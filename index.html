@@ -5,38 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CloudFound – Websites & Care Plans</title>
 
-  <!-- Google fonts -->
+  <!-- Google fonts for more “designed” look -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap"
+    rel="stylesheet"
+  />
 
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
+<body>
   <!-- HERO / HEADER -->
   <header class="hero">
     <div class="hero-top">
       <div class="logo">CloudFound</div>
+
       <nav class="main-nav">
         <a href="#about">About</a>
         <a href="#skills">How I Work</a>
         <a href="#services">Services</a>
-        <a href="#for">Who it’s for</a>
         <a href="#process">Process</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
 
     <div class="hero-grid">
+      <!-- Left side: photo area (set with CSS background) -->
       <div class="hero-photo" aria-hidden="true"></div>
 
+      <!-- Right side: hero card -->
       <div class="hero-card">
-        <p class="eyebrow">Done-for-you websites & care plans</p>
-        <h1>Your website, kept modern and stress-free.</h1>
+        <p class="eyebrow">Website care for local service businesses</p>
+        <h1>Modern websites, quietly taken care of for you.</h1>
         <p class="hero-text">
-          CloudFound designs and maintains simple, reliable websites for local service businesses
-          so you can look professional online without having to be “the tech person” as well.
+          CloudFound builds and maintains simple, reliable websites for small businesses in Kitchener
+          so you can look professional online without worrying about the tech.
         </p>
         <a class="btn-primary" href="#contact">Book a free website check-up</a>
       </div>
@@ -44,22 +49,18 @@
   </header>
 
   <main>
-
-    <!-- ABOUT -->
+    <!-- ABOUT SECTION -->
     <section id="about" class="section section-cream">
       <div class="section-inner two-col">
         <div>
           <h2>For small teams who want big-business polish.</h2>
           <p>
-            Hi, I’m Jacob – a computer science student who builds clean, responsive
+            Hi, I’m Jacob – a computer science student who loves building clean, responsive
             websites that feel calm, clear, and easy to use. I focus on local service businesses:
             trades, salons, studios, and other small teams that don’t have an in-house “web person”.
           </p>
-          <p>
-            You get someone who actually answers emails, explains things in plain language,
-            and cares about how your site feels for real customers.
-          </p>
         </div>
+
         <div>
           <ul class="checklist">
             <li>Simple layouts that look good on phones and laptops</li>
@@ -71,25 +72,54 @@
       </div>
     </section>
 
-    <!-- HOW I WORK -->
+    <!-- HOW I WORK (repurposed so it’s NOT repeating the process section) -->
     <section id="skills" class="section section-white">
       <div class="section-inner two-col">
         <div>
-          <h2>How projects work with CloudFound</h2>
-          <p>I keep the process lightweight and transparent so you always know what’s happening:</p>
+          <h2>How I work</h2>
+          <p>
+            I keep things lightweight and transparent. You’ll always know what’s happening,
+            what I need from you, and what’s coming next.
+          </p>
         </div>
-        <div>
-          <ul class="bullets">
-            <li><strong>1. Quick call or email</strong> – we talk through your business, goals, and what’s not working now.</li>
-            <li><strong>2. Simple plan</strong> – you get a clear outline of pages, timeline, and pricing before we start.</li>
-            <li><strong>3. Build & review</strong> – I design the site, you review it, and we tweak the details together.</li>
-            <li><strong>4. Launch & care</strong> – once it’s live, I can stay on for updates, backups, and small edits.</li>
-          </ul>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-top">
+              <span class="feature-dot" aria-hidden="true"></span>
+              <h3>Clear plan</h3>
+            </div>
+            <p>Before I build anything, you get a simple outline of pages, timeline, and pricing.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-top">
+              <span class="feature-dot" aria-hidden="true"></span>
+              <h3>Calm design</h3>
+            </div>
+            <p>Modern typography, clean spacing, and a layout that feels high-end (not cluttered).</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-top">
+              <span class="feature-dot" aria-hidden="true"></span>
+              <h3>Mobile first</h3>
+            </div>
+            <p>Your site is built to look great on phones and laptops, with fast load times.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-top">
+              <span class="feature-dot" aria-hidden="true"></span>
+              <h3>Launch support</h3>
+            </div>
+            <p>Once it’s live, I can hand it off cleanly or stay on a care plan for updates and edits.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- SERVICES -->
+    <!-- SERVICES SECTION -->
     <section id="services" class="section section-rose">
       <div class="section-inner services-grid">
         <div class="section-intro">
@@ -141,36 +171,8 @@
       </div>
     </section>
 
-    <!-- WHO IT’S FOR -->
-    <section id="for" class="section section-cream">
-      <div class="section-inner">
-        <h2>Who this is for</h2>
-        <p class="lead">
-          CloudFound is a great fit if you’re a local service business and you want a site that looks premium,
-          loads fast, and makes it easy for customers to contact you.
-        </p>
-
-        <div class="cards-grid">
-          <div class="info-card">
-            <h3>You’re a local service business</h3>
-            <p>Trades, clinics, studios, salons, personal services, home services — anything where calls and bookings matter.</p>
-          </div>
-
-          <div class="info-card">
-            <h3>Your site feels outdated</h3>
-            <p>It works “okay,” but it doesn’t feel modern, mobile-friendly, or trustworthy — and you’re losing leads because of it.</p>
-          </div>
-
-          <div class="info-card">
-            <h3>You want it done without stress</h3>
-            <p>You don’t want to fight with tech. You want someone reliable to build it cleanly and keep it running.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROCESS (single version only) -->
-    <section id="process" class="section section-white">
+    <!-- PROCESS SECTION (kept as the dedicated process, now styled with warm green accents) -->
+    <section id="process" class="section section-process">
       <div class="section-inner">
         <div class="section-intro">
           <h2>How a project usually works</h2>
@@ -195,7 +197,8 @@
               <h3>Design &amp; build</h3>
             </div>
             <p>
-              I put together a simple structure, visuals, and copy based on what we discussed, then refine it with your feedback until it feels right.
+              I put together a simple structure, visuals, and copy based on what we discussed,
+              then refine it with your feedback until it feels right.
             </p>
           </div>
 
@@ -205,14 +208,15 @@
               <h3>Launch &amp; care</h3>
             </div>
             <p>
-              Once your site goes live, I can either hand it off to you or continue to look after updates, backups, and small content changes on an ongoing care plan.
+              Once your site goes live, I can either hand it off to you or continue to look after updates,
+              backups, and small content changes on an ongoing care plan.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- CONTACT SECTION -->
     <section id="contact" class="section section-contact">
       <div class="section-inner contact-layout">
         <div class="contact-copy">
@@ -260,6 +264,7 @@
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
     <p>&copy; <span id="year"></span> CloudFound. Modern websites for local service businesses.</p>
   </footer>
@@ -269,4 +274,3 @@
   </script>
 </body>
 </html>
-
