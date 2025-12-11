@@ -672,3 +672,56 @@ button[type="submit"]:hover {
     color: #555;
     line-height: 1.6;
 }
+/* Process section */
+.process-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.process-card{
+  background: rgba(255,255,255,0.72);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 18px;
+  padding: 18px 18px 16px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.process-card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 18px 44px rgba(15, 23, 42, 0.10);
+}
+
+.process-top{
+  display:flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.process-step{
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.04em;
+  color: rgba(15, 23, 42, 0.55);
+}
+
+.process-card h3{
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.process-card p{
+  margin: 0;
+  color: rgba(15, 23, 42, 0.78);
+  line-height: 1.65;
+}
+
+/* Responsive: stack cards on smaller screens */
+@media (max-width: 900px){
+  .process-grid{ grid-template-columns: 1fr; }
+}
