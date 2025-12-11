@@ -415,3 +415,111 @@ button[type="submit"]:hover{
   .expectations .expect-card,
   .section-process .process-card{ animation: none !important; transition: none !important; }
 }
+/* PRICING */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 22px;
+}
+
+.pricing-card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: var(--radius-md);
+  padding: 24px 22px 22px;
+  box-shadow: 0 18px 35px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
+}
+
+.pricing-card-featured {
+  outline: 2px solid rgba(184, 208, 195, 0.9); /* sage */
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.pricing-price {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin: 10px 0 6px;
+  color: var(--color-ink);
+}
+
+.pricing-note {
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-size: 0.95rem;
+  color: var(--color-muted);
+}
+
+.pricing-footnote {
+  margin-top: 18px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(184, 208, 195, 0.22);
+}
+
+/* RISK REVERSAL */
+.guarantee-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.guarantee-card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: var(--radius-md);
+  padding: 20px 18px;
+  box-shadow: 0 18px 35px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+/* DEMOS */
+.demo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.demo-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: var(--radius-md);
+  padding: 22px 20px;
+  box-shadow: 0 18px 35px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.demo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
+}
+
+.demo-tag {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: rgba(184, 208, 195, 0.22);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.demo-tag-cta {
+  background: rgba(209, 134, 76, 0.18);
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .pricing-grid,
+  .guarantee-grid,
+  .demo-grid {
+    grid-template-columns: 1fr;
+  }
+}
