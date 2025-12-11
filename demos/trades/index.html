@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NorthField Plumbing Co. | Demo Site</title>
+
+  <!-- Same fonts as your main site -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="../../index.html">CloudFound</a>
+
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#areas">Service area</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-dark" href="#quote">Request a quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-left">
+        <p class="kicker">DEMO BUILD • Trades / Plumbing</p>
+        <h1>Fast, clean plumbing service — with upfront pricing.</h1>
+        <p class="lead">
+          Emergency calls, repairs, installs, and maintenance. This page is example content to show
+          what your business website could look like.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn btn-accent" href="#quote">Get a same-day quote</a>
+          <a class="btn btn-ghost" href="tel:+12225550123">Call (226) 555-0123</a>
+        </div>
+
+        <div class="trustbar">
+          <div class="trust-item">
+            <span class="dot"></span>
+            <span>Clear service list</span>
+          </div>
+          <div class="trust-item">
+            <span class="dot"></span>
+            <span>Strong call-to-action</span>
+          </div>
+          <div class="trust-item">
+            <span class="dot"></span>
+            <span>Mobile-first layout</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card" id="quote">
+        <p class="card-title">Request a quote</p>
+        <p class="card-sub">We’ll reply fast with next steps + a ballpark range.</p>
+
+        <form class="form" action="#" method="post">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required>
+          </label>
+
+          <label>
+            Phone or Email
+            <input type="text" name="contact" placeholder="(226) 555-0123 or you@email.com" required>
+          </label>
+
+          <label>
+            What do you need help with?
+            <textarea name="message" rows="4" placeholder="Example: leaking faucet, clogged drain, water heater install…" required></textarea>
+          </label>
+
+          <button class="btn btn-dark" type="submit">Send request</button>
+
+          <p class="fine">
+            Demo note: this form is visual only unless you connect it to email / Netlify forms.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Services</h2>
+        <p>Simple, clear service boxes. This is the part most trades sites get wrong.</p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Emergency plumbing</h3>
+          <p>Fast response for leaks, backups, and urgent issues.</p>
+          <ul>
+            <li>Leak isolation</li>
+            <li>Drain backups</li>
+            <li>Shutoff + damage control</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Repairs & replacements</h3>
+          <p>Fix the problem cleanly and make it look good after.</p>
+          <ul>
+            <li>Faucets & fixtures</li>
+            <li>Toilets, sinks, showers</li>
+            <li>Valves + supply lines</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Installs & upgrades</h3>
+          <p>New installs with tidy finish work and clear expectations.</p>
+          <ul>
+            <li>Water heaters</li>
+            <li>Dishwashers & disposals</li>
+            <li>Kitchen/bath upgrades</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout">
+        <div>
+          <h3>Risk reversal (great for sales)</h3>
+          <p>
+            “If you don’t feel confident after the first call + estimate, no worries — no pressure.”
+          </p>
+        </div>
+        <a class="btn btn-accent" href="#quote">Request a quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Areas -->
+  <section class="section section-soft" id="areas">
+    <div class="wrap two-col">
+      <div>
+        <h2>Service area</h2>
+        <p>
+          Add the cities you serve so you show up in local searches and people instantly know you’re relevant.
+        </p>
+
+        <div class="pill-row">
+          <span class="pill">Kitchener</span>
+          <span class="pill">Waterloo</span>
+          <span class="pill">Cambridge</span>
+          <span class="pill">Guelph</span>
+          <span class="pill">+ nearby</span>
+        </div>
+      </div>
+
+      <div class="sidebox">
+        <h3>What a “good” trades site does</h3>
+        <ul class="check">
+          <li>Clear services (no vague wording)</li>
+          <li>One primary CTA per page</li>
+          <li>Trust markers (licensed/insured, service area, response time)</li>
+          <li>Loads fast on phones</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>FAQ</h2>
+        <p>Answer common questions to reduce back-and-forth and get more calls.</p>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary>Do you offer same-day service?</summary>
+          <p>Example answer: Yes — when scheduling allows. For emergencies, we prioritize urgent calls.</p>
+        </details>
+        <details>
+          <summary>How does pricing work?</summary>
+          <p>Example answer: We give a range based on your description, then confirm after a quick look on-site.</p>
+        </details>
+        <details>
+          <summary>Are you licensed and insured?</summary>
+          <p>Example answer: Add your real credentials here. (Don’t claim this unless it’s true.)</p>
+        </details>
+      </div>
+
+      <div class="center-cta">
+        <a class="btn btn-dark" href="../../index.html#contact">Back to CloudFound</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p><strong>Demo build</strong> made by CloudFound • Replace this content with your client’s real info.</p>
+      <p class="muted">© <span id="year"></span> NorthField Plumbing Co. (Demo)</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
