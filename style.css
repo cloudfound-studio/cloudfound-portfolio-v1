@@ -459,3 +459,91 @@ button:hover {
         font-size: 1.8rem;
     }
 }
+/* Smooth scrolling for in-page links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* General smooth transitions */
+a,
+.btn-primary,
+button,
+.service-card,
+.hero-card,
+.contact-card,
+.logo {
+    transition: all 0.2s ease-out;
+}
+
+/* Fade-up animation keyframes */
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply fade-up to main sections and hero card */
+.hero-card,
+.section-cream .section-inner,
+.section-white .section-inner,
+.section-rose .section-inner,
+.section-contact .section-inner {
+    opacity: 0;
+    animation: fadeUp 0.7s ease-out forwards;
+}
+
+/* Staggered delays so things don't all pop in at once */
+.section-white .section-inner {
+    animation-delay: 0.12s;
+}
+
+.section-rose .section-inner {
+    animation-delay: 0.24s;
+}
+
+.section-contact .section-inner {
+    animation-delay: 0.36s;
+}
+
+/* Hero card subtle hover lift */
+.hero-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
+}
+
+/* Service cards hover lift */
+.service-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
+}
+
+/* Contact card hover */
+.contact-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.16);
+}
+
+/* Buttons: tiny lift + shadow on hover */
+.btn-primary,
+button[type="submit"] {
+    transition: background-color 0.2s ease, transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.btn-primary:hover,
+button[type="submit"]:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.2);
+}
