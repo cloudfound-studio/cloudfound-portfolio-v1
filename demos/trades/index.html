@@ -3,213 +3,295 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NorthField Plumbing Co. | Demo Site</title>
-
-  <!-- Same fonts as your main site -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
-
+  <title>BeElectric — Local Electrician Demo</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- Top bar -->
-  <header class="topbar">
+  <!-- Top Bar -->
+  <div class="topbar">
     <div class="wrap topbar-inner">
-      <a class="brand" href="../../index.html">CloudFound</a>
+      <p><strong>24/7 Emergency</strong> • Kitchener–Waterloo • <a href="#contact">Book a free estimate</a></p>
+      <p class="topbar-right">Call: <a href="tel:+12260000000">(226) 000-0000</a></p>
+    </div>
+  </div>
 
-      <nav class="nav">
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="#">
+        <span class="brand-mark" aria-hidden="true">⚡</span>
+        <span class="brand-name">BeElectric</span>
+        <span class="brand-sub">demo build</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
         <a href="#services">Services</a>
-        <a href="#areas">Service area</a>
-        <a href="#faq">FAQ</a>
-        <a class="btn btn-dark" href="#quote">Request a quote</a>
+        <a href="#work">Work</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Testimonials</a>
+        <a class="btn btn-small" href="#contact">Get a quote</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div class="hero-left">
-        <p class="kicker">DEMO BUILD • Trades / Plumbing</p>
-        <h1>Fast, clean plumbing service — with upfront pricing.</h1>
-        <p class="lead">
-          Emergency calls, repairs, installs, and maintenance. This page is example content to show
-          what your business website could look like.
-        </p>
-
-        <div class="hero-cta">
-          <a class="btn btn-accent" href="#quote">Get a same-day quote</a>
-          <a class="btn btn-ghost" href="tel:+12225550123">Call (226) 555-0123</a>
-        </div>
-
-        <div class="trustbar">
-          <div class="trust-item">
-            <span class="dot"></span>
-            <span>Clear service list</span>
-          </div>
-          <div class="trust-item">
-            <span class="dot"></span>
-            <span>Strong call-to-action</span>
-          </div>
-          <div class="trust-item">
-            <span class="dot"></span>
-            <span>Mobile-first layout</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero-card" id="quote">
-        <p class="card-title">Request a quote</p>
-        <p class="card-sub">We’ll reply fast with next steps + a ballpark range.</p>
-
-        <form class="form" action="#" method="post">
-          <label>
-            Name
-            <input type="text" name="name" placeholder="Your name" required>
-          </label>
-
-          <label>
-            Phone or Email
-            <input type="text" name="contact" placeholder="(226) 555-0123 or you@email.com" required>
-          </label>
-
-          <label>
-            What do you need help with?
-            <textarea name="message" rows="4" placeholder="Example: leaking faucet, clogged drain, water heater install…" required></textarea>
-          </label>
-
-          <button class="btn btn-dark" type="submit">Send request</button>
-
-          <p class="fine">
-            Demo note: this form is visual only unless you connect it to email / Netlify forms.
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy fade-in">
+          <p class="pill">Licensed & Insured • Same-week availability</p>
+          <h1>Need solid, reliable electrical work—done right the first time?</h1>
+          <p class="lead">
+            A clean, modern electrician website demo: strong CTA, trust signals, and mobile-first layout.
+            Perfect for service businesses that want more calls.
           </p>
-        </form>
-      </div>
-    </div>
-  </section>
 
-  <!-- Services -->
-  <section class="section" id="services">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>Services</h2>
-        <p>Simple, clear service boxes. This is the part most trades sites get wrong.</p>
-      </div>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#contact">Request a quote</a>
+            <a class="btn btn-ghost" href="#services">View services</a>
+          </div>
 
-      <div class="cards">
-        <div class="card">
-          <h3>Emergency plumbing</h3>
-          <p>Fast response for leaks, backups, and urgent issues.</p>
-          <ul>
-            <li>Leak isolation</li>
-            <li>Drain backups</li>
-            <li>Shutoff + damage control</li>
-          </ul>
+          <div class="trust">
+            <div class="trust-item">
+              <span class="trust-num">★ 4.9</span>
+              <span class="trust-label">Google rating</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-num">2h</span>
+              <span class="trust-label">Typical response</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-num">100%</span>
+              <span class="trust-label">Upfront pricing</span>
+            </div>
+          </div>
         </div>
 
-        <div class="card">
-          <h3>Repairs & replacements</h3>
-          <p>Fix the problem cleanly and make it look good after.</p>
-          <ul>
-            <li>Faucets & fixtures</li>
-            <li>Toilets, sinks, showers</li>
-            <li>Valves + supply lines</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>Installs & upgrades</h3>
-          <p>New installs with tidy finish work and clear expectations.</p>
-          <ul>
-            <li>Water heaters</li>
-            <li>Dishwashers & disposals</li>
-            <li>Kitchen/bath upgrades</li>
-          </ul>
+        <div class="hero-visual fade-in">
+          <div class="visual-card">
+            <div class="visual-badge">FAST QUOTES</div>
+            <div class="visual-title">Modern site structure</div>
+            <ul class="visual-list">
+              <li>Clear services</li>
+              <li>Strong call-to-action</li>
+              <li>Trust badges + reviews</li>
+              <li>Mobile-first layout</li>
+            </ul>
+            <div class="visual-strip" aria-hidden="true"></div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="callout">
-        <div>
-          <h3>Risk reversal (great for sales)</h3>
+    <!-- Services -->
+    <section id="services" class="section">
+      <div class="wrap">
+        <div class="section-head fade-in">
+          <h2>Services</h2>
+          <p>Simple, scannable cards—built to convert on mobile.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card fade-in">
+            <h3>Panel upgrades</h3>
+            <p>Safe, code-compliant upgrades with clean labeling and documentation.</p>
+            <span class="tag">Most requested</span>
+          </article>
+
+          <article class="card fade-in">
+            <h3>Lighting installs</h3>
+            <p>Pot lights, fixtures, exterior lighting—installed neatly and efficiently.</p>
+            <span class="tag">Residential</span>
+          </article>
+
+          <article class="card fade-in">
+            <h3>Troubleshooting</h3>
+            <p>Fast diagnosis for outages, tripping breakers, and electrical faults.</p>
+            <span class="tag">Emergency</span>
+          </article>
+
+          <article class="card fade-in">
+            <h3>EV charger setup</h3>
+            <p>Right-sized circuits and tidy installs with safety checks included.</p>
+            <span class="tag">Modern</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="section section-soft">
+      <div class="wrap">
+        <div class="section-head split fade-in">
+          <div>
+            <h2>Recent work</h2>
+            <p>Three “project tiles” makes it feel real—even as a demo.</p>
+          </div>
+          <a class="btn btn-ghost" href="#contact">Ask about your job</a>
+        </div>
+
+        <div class="work-grid">
+          <div class="work-item fade-in">
+            <div class="work-thumb" aria-hidden="true"></div>
+            <div class="work-meta">
+              <h3>Basement pot lights</h3>
+              <p>Layout + install, warm tone, clean wiring.</p>
+            </div>
+          </div>
+
+          <div class="work-item fade-in">
+            <div class="work-thumb two" aria-hidden="true"></div>
+            <div class="work-meta">
+              <h3>Panel organization</h3>
+              <p>Breaker mapping + safety check included.</p>
+            </div>
+          </div>
+
+          <div class="work-item fade-in">
+            <div class="work-thumb three" aria-hidden="true"></div>
+            <div class="work-meta">
+              <h3>Exterior lighting</h3>
+              <p>Weather-rated fixtures, tidy finish.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section">
+      <div class="wrap">
+        <div class="section-head fade-in">
+          <h2>Simple pricing</h2>
+          <p>Trades sites win when pricing feels clear and “no surprise.”</p>
+        </div>
+
+        <div class="pricing">
+          <div class="price-card fade-in">
+            <p class="eyebrow">Starter</p>
+            <h3>Service site</h3>
+            <p class="price">$500</p>
+            <ul>
+              <li>Home + 3 pages</li>
+              <li>Mobile-first design</li>
+              <li>Contact CTA + form</li>
+              <li>Basic SEO setup</li>
+            </ul>
+            <a class="btn btn-primary" href="#contact">Get this style</a>
+          </div>
+
+          <div class="price-card featured fade-in">
+            <p class="eyebrow">Best value</p>
+            <h3>Conversion rebuild</h3>
+            <p class="price">$800</p>
+            <ul>
+              <li>Full redesign</li>
+              <li>Better structure + copy</li>
+              <li>Trust + reviews layout</li>
+              <li>Speed + polish pass</li>
+            </ul>
+            <a class="btn btn-primary" href="#contact">Request a quote</a>
+          </div>
+
+          <div class="price-card fade-in">
+            <p class="eyebrow">Ongoing</p>
+            <h3>Care plan</h3>
+            <p class="price">$50/mo</p>
+            <ul>
+              <li>Updates + backups</li>
+              <li>Small content edits</li>
+              <li>Basic security checks</li>
+              <li>Priority fixes</li>
+            </ul>
+            <a class="btn btn-ghost" href="#contact">Ask about care</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section section-soft">
+      <div class="wrap">
+        <div class="section-head fade-in">
+          <h2>What customers say</h2>
+          <p>For the demo, keep these as “example reviews.”</p>
+        </div>
+
+        <div class="quotes">
+          <figure class="quote fade-in">
+            <blockquote>“Fast response, clean install, and the quote matched the invoice.”</blockquote>
+            <figcaption>— Example Review • Kitchener</figcaption>
+          </figure>
+          <figure class="quote fade-in">
+            <blockquote>“We got more calls after updating the site. Super clear and professional.”</blockquote>
+            <figcaption>— Example Review • Waterloo</figcaption>
+          </figure>
+          <figure class="quote fade-in">
+            <blockquote>“Showed up on time and explained everything in plain language.”</blockquote>
+            <figcaption>— Example Review • Cambridge</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="wrap contact-grid">
+        <div class="contact-copy fade-in">
+          <h2>Get a quick quote</h2>
           <p>
-            “If you don’t feel confident after the first call + estimate, no worries — no pressure.”
+            This is a demo contact layout. On a real client site, this form would email the business
+            or connect to a CRM.
           </p>
+          <div class="contact-mini">
+            <p><strong>Hours:</strong> Mon–Sat • 8am–6pm</p>
+            <p><strong>Service area:</strong> Kitchener–Waterloo</p>
+            <p><strong>Back to CloudFound:</strong> <a href="../../index.html">Return to main site</a></p>
+          </div>
         </div>
-        <a class="btn btn-accent" href="#quote">Request a quote</a>
-      </div>
-    </div>
-  </section>
 
-  <!-- Areas -->
-  <section class="section section-soft" id="areas">
-    <div class="wrap two-col">
-      <div>
-        <h2>Service area</h2>
-        <p>
-          Add the cities you serve so you show up in local searches and people instantly know you’re relevant.
-        </p>
-
-        <div class="pill-row">
-          <span class="pill">Kitchener</span>
-          <span class="pill">Waterloo</span>
-          <span class="pill">Cambridge</span>
-          <span class="pill">Guelph</span>
-          <span class="pill">+ nearby</span>
+        <div class="form-card fade-in">
+          <form>
+            <label>
+              Name
+              <input type="text" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" placeholder="you@email.com" required />
+            </label>
+            <label>
+              What do you need help with?
+              <textarea rows="4" placeholder="Example: panel upgrade quote…" required></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">Send request</button>
+            <p class="fine">Demo form only (no backend connected yet).</p>
+          </form>
         </div>
       </div>
-
-      <div class="sidebox">
-        <h3>What a “good” trades site does</h3>
-        <ul class="check">
-          <li>Clear services (no vague wording)</li>
-          <li>One primary CTA per page</li>
-          <li>Trust markers (licensed/insured, service area, response time)</li>
-          <li>Loads fast on phones</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="section" id="faq">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>FAQ</h2>
-        <p>Answer common questions to reduce back-and-forth and get more calls.</p>
-      </div>
-
-      <div class="faq">
-        <details>
-          <summary>Do you offer same-day service?</summary>
-          <p>Example answer: Yes — when scheduling allows. For emergencies, we prioritize urgent calls.</p>
-        </details>
-        <details>
-          <summary>How does pricing work?</summary>
-          <p>Example answer: We give a range based on your description, then confirm after a quick look on-site.</p>
-        </details>
-        <details>
-          <summary>Are you licensed and insured?</summary>
-          <p>Example answer: Add your real credentials here. (Don’t claim this unless it’s true.)</p>
-        </details>
-      </div>
-
-      <div class="center-cta">
-        <a class="btn btn-dark" href="../../index.html#contact">Back to CloudFound</a>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="wrap footer-inner">
-      <p><strong>Demo build</strong> made by CloudFound • Replace this content with your client’s real info.</p>
-      <p class="muted">© <span id="year"></span> NorthField Plumbing Co. (Demo)</p>
+      <p>© <span id="year"></span> BeElectric (Demo). Built by CloudFound.</p>
+      <a class="btn btn-small btn-ghost" href="../../index.html">Back</a>
     </div>
   </footer>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // subtle fade-in on scroll
+    const els = document.querySelectorAll(".fade-in");
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) e.target.classList.add("in");
+      });
+    }, { threshold: 0.12 });
+
+    els.forEach(el => io.observe(el));
   </script>
 </body>
 </html>
