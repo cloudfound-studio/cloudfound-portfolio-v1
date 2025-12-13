@@ -256,7 +256,7 @@
       <a class="demo-card" href="demos/trades/index.html" target="_blank" rel="noopener">
         <p class="eyebrow">Demo</p>
         <h3>Local Trade Service</h3>
-        <p>Simple layout, strong call-to-action, clear services.</p>
+        <p>Clean electrician-style layout, strong CTA, clear services + pricing.</p>
         <span class="demo-tag demo-tag-cta">View demo</span>
       </a>
 
@@ -264,11 +264,11 @@
       <a class="demo-card" href="demos/salon/index.html" target="_blank" rel="noopener">
         <p class="eyebrow">Demo</p>
         <h3>Salon / Studio</h3>
-        <p>Warm visuals, clean booking CTA, mobile-friendly sections.</p>
+        <p>Warm, feminine palette, booking CTA, services + gallery layout.</p>
         <span class="demo-tag demo-tag-cta">View demo</span>
       </a>
 
-      <!-- CTA -->
+      <!-- Mockup CTA -->
       <a class="demo-card" href="#contact">
         <p class="eyebrow">Free</p>
         <h3>Request your mockup</h3>
@@ -278,6 +278,7 @@
     </div>
   </div>
 </section>
+
 
 
 
@@ -325,34 +326,45 @@
                 </div>
 
                 <div class="contact-card">
-                    <form>
-                        <label>
-                            Your Name
-                            <input type="text" name="name" required>
-                        </label>
+  <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <!-- Netlify hidden fields (required) -->
+    <input type="hidden" name="form-name" value="contact" />
+    <p style="display:none;">
+      <label>
+        Don’t fill this out if you’re human:
+        <input name="bot-field" />
+      </label>
+    </p>
 
-                        <label>
-                            Your Email
-                            <input type="email" name="email" required>
-                        </label>
+    <label>
+      Your Name
+      <input type="text" name="name" required>
+    </label>
 
-                        <label>
-                            Your Business / Website
-                            <input type="text" name="business">
-                        </label>
+    <label>
+      Your Email
+      <input type="email" name="email" required>
+    </label>
 
-                        <label>
-                            What do you need help with?
-                            <textarea name="message" rows="4" required></textarea>
-                        </label>
+    <label>
+      Your Business / Website
+      <input type="text" name="business">
+    </label>
 
-                        <button type="submit">Send message</button>
-                    </form>
-                    <p class="contact-email">
-                        Prefer email? Reach me at
-                        <a href="mailto:cloudfound.studio@gmail.com">cloudfound.studio@gmail.com</a>
-                    </p>
-                </div>
+    <label>
+      What do you need help with?
+      <textarea name="message" rows="4" required></textarea>
+    </label>
+
+    <button type="submit">Send message</button>
+  </form>
+
+  <p class="contact-email">
+    Prefer email? Reach me at
+    <a href="mailto:cloudfound.studio@gmail.com">cloudfound.studio@gmail.com</a>
+  </p>
+</div>
+
             </div>
         </section>
     </main>

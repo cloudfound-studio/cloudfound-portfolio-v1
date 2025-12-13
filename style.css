@@ -523,3 +523,4 @@ button[type="submit"]:hover{
     grid-template-columns: 1fr;
   }
 }
+.hidden { display: none; }
